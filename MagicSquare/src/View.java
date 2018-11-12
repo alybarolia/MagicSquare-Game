@@ -112,6 +112,11 @@ public class View {
 		return this.buttons;
 	}
 	
+	
+	public void victory() {
+		JOptionPane.showMessageDialog(frame, "Victory!!");
+	}
+	
 	public static void main(String []args) {
 		new View();
 	}
