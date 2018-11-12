@@ -32,6 +32,7 @@ public class Controller implements ActionListener{
 			boolean col2 = model.checkVals(Integer.parseInt(Newbuttons[0][1].getText()), Integer.parseInt(Newbuttons[1][1].getText()),Integer.parseInt(Newbuttons[2][1].getText()));
 			boolean col3 = model.checkVals(Integer.parseInt(Newbuttons[0][2].getText()), Integer.parseInt(Newbuttons[1][2].getText()),Integer.parseInt(Newbuttons[2][2].getText()));
 			
+			
 			if ((row1 && row2 && row3 && diagonal1 && diagonal2 && col1 && col2 && col3) == true) {
 				view.victory();
 			} 

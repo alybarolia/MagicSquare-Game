@@ -104,6 +104,10 @@ public class View {
 	public int getValue() {
 		String i = JOptionPane.showInputDialog("Enter Your Number");
 		int j = Integer.parseInt(i);
+		if (j > 9 || j < 0) {
+			i = JOptionPane.showInputDialog("Enter Your Number");
+			j = Integer.parseInt(i);
+		}
 		return j;
 	}
 	
